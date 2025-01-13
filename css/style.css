@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root {
+    --font-family: "Kumbh Sans", serif;
+
+    /* Colores */
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+
+    --font-size-name-state: 18px;
+}
+
+@media only screen and (width <=400px) {
+    .img-izquierda {
+        top: -40rem !important;
+        left: -40rem !important;
+    }
+    
+    .img-derecha {
+        bottom: -40rem !important;
+        right: -40rem !important;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--Dark-cyan);
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.img-izquierda {
+    position: absolute;
+    top: -32rem;
+    left: -10rem;
+}
+
+.img-derecha {
+    position: absolute;
+    bottom: -32rem;
+    right: -10rem;
+}
+
+
+
+.card {
+    width: 40vh;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.card-imagen {
+    position: relative;
+}
+
+.card-imagen img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-imagen .imagen-profile {
+    position: absolute;
+    top: 60%;
+    left: 34%;
+    border-radius: 100%;
+    background-color: white;
+    padding: 5px;
+}
+
+.imagen-profile img {
+    border-radius: 100%;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.card-body {
+    margin: 4.6rem 0 2rem 0;
+}
+
+.card-body .information {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.card-body .information .name {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+
+.card-body .information .age {
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--Dark-gray);
+    font-size: 1.4rem;
+}
+
+.card-body .city {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    color: var(--Dark-gray);
+    font-family: var(--font-family);
+    font-weight: 400;
+}
+
+.card-footer {
+    border-top: 1px solid  var(--Dark-gray);
+    padding: 25px 40px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-footer .details .total {
+    color: var(--Very-dark-desaturated-blue);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.card-footer .details .description {
+    margin-top: 3px;
+    color: var(--Dark-gray);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 0.68rem;
+    letter-spacing: 2px;
+}
